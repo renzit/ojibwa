@@ -3,14 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "build": "netlify-lambda build express",
+    "start": "node server-local.js"
   },
-  "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~4.1.1",
-    "express": "~4.16.4",
-    "hbs": "~4.0.3",
-    "http-errors": "~1.7.2",
-    "morgan": "~1.9.1"
+  "main": "functions/server.js",
+  "dependencies": {},
+  "devDependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "netlify-lambda": "^0.4.0",
+    "serverless-http": "^1.6.0"
   }
 }
