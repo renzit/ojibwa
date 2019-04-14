@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const router = express.Router();
 router.get('/', (req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/html' });
-  res.write(`<h1>Maximiliano Echenique Fotógrafo</h1>`);
+  res.write(`<h1>Maximiliano Echenique</h1>`);
   res.end();
 });
 router.get('/another', (req, res) => res.json({ route: req.originalUrl }));
