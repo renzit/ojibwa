@@ -29,27 +29,19 @@ h1 {
     list-style: none;
 }
 
-/* .main-nav a:not(.active) {
-    display: none;
-} */
-
 
 ul {
     padding: 0;
 }
 
-.active,
-.main-nav a {
-    all: unset;
+.main-nav a,
+.main-nav span {
     font-stretch: condensed;
     font-weight: 600;
-    cursor: pointer;
     height: 44px;
-    display: block;
     text-align: center;
     font-size: 16px;
     line-height: 2.5;
-
     cursor: pointer;
     margin: 0;
     color: #9c9c9c;
@@ -58,15 +50,6 @@ ul {
 .subnav {
     display: none;
 }
-
-.dropdown-hide a:not(.active) {
-    display: none;
-}
-
-.link-hide {
-    display: none !important;
-}
-
 
 #backToThumbs {
     display: none;
@@ -86,5 +69,26 @@ ul {
     .site-title h1.logo,
     .logo-subtitle {
         display: block;
+    }
+}
+
+@media only screen and (min-width: 56.94444em) {
+    .main-nav li {
+        display: inline-block;
+        padding: 0 20px;
+    }
+
+    .main-nav li:hover .subnav {
+        display: block;
+    }
+
+    .subnav {
+        position: absolute;
+    }
+
+    li.gallery-collection {
+        display: block;
+        padding-left: 5px;
+        text-align: left;
     }
 }
