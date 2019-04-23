@@ -10,6 +10,10 @@ h1 {
     font-size: 26px;
 }
 
+ul {
+    padding: 0;
+}
+
 .logo-subtitle {
     font-family: "Helvetica", arial, sans-serif;
     font-weight: normal;
@@ -30,9 +34,7 @@ h1 {
 }
 
 
-ul {
-    padding: 0;
-}
+
 
 .main-nav a,
 .main-nav span {
@@ -72,6 +74,31 @@ ul {
     }
 }
 
+@media only screen and (max-width: 56.94443em) {
+
+    .main-nav ul li {
+        display: none;
+    }
+
+    .main-nav span {
+        display: block;
+        height: auto;
+
+    }
+
+    .main-nav.clicked ul li {
+        display: block;
+    }
+
+    .main-nav ul li a {
+        display: block;
+    }
+
+    .main-nav ul {
+        margin: 14px 32px;
+    }
+}
+
 @media only screen and (min-width: 56.94444em) {
     .main-nav li {
         display: inline-block;
@@ -84,11 +111,14 @@ ul {
 
     .subnav {
         position: absolute;
+        background-color: white;
+        box-shadow: 0px 1px 5px #999;
     }
 
     li.gallery-collection {
         display: block;
-        padding-left: 5px;
+        padding-left: 8px;
         text-align: left;
+        border-top: 1px solid #eee;
     }
 }
