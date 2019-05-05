@@ -2,340 +2,131 @@
 <html>
 
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138431976-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-138431976-1');
-  </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138431976-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-138431976-1');
+    </script>
 
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Maximiliano Echenique</title>
-  <!-- <link rel="shortcut icon" type="image/x-icon" href="default-favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maximiliano Echenique</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="default-favicon.ico">
 <link rel="canonical" href="https://ojibwa.netlify.com/"> -->
-  <meta property="og:site_name" content="Maximiliano Echenique">
-  <meta property="og:title" content="Maximiliano Echenique | Fotografía">
-  <!-- <meta property="og:url" content="https://ojibwa.netlify.com/"> -->
-  <meta property="og:type" content="website">
-  <meta itemprop="name" content="Maximiliano Echenique">
-  <!-- <meta itemprop="url" content="https://ojibwa.netlify.com/"> -->
-  <meta name="twitter:title" content="Maximiliano Echenique">
-  <!-- <meta name="twitter:url" content="https://ojibwa.netlify.com/"> -->
-  <meta name="twitter:card" content="summary">
-  <!-- <meta name="description" content=""> -->
-  <!-- <script type="text/javascript" src="./files/PcEbcRfKx720vi03zmZP-GJFCfxB07pHJB-W430ud1qfenX2fFHN4UJLFRbh52jhWD9tFcscjhItZQFqZRJtFRwtwAJtZRwhFs77MPG0ScNKZW4XdA8R-eB8demhjAoDO1FUiABkZWF3jAF8OcFzdPUCdhFydeyzSabCScNKZW4XdA8R-eB8demhjAoDOcFzdPUkdh48S1sl-AFGjAmCZWZyd1w0SaBujW48Sagyjh90jhNlOYiaikokdh48.js"></script> -->
-  <link rel="stylesheet" type="text/css" href="./css/utils.css">
-  <link rel="stylesheet" type="text/css" href="./css/fonts.css">
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
-  <link rel="stylesheet" type="text/css" href="./css/menu.css">
-  <link rel="stylesheet" type="text/css" href="./css/grid.css">
-  <script async src="./js/GridLoadingEffects/modernizr-custom.js"></script>
-  <script src="./js/template.js"></script>
-  <script>
-    fetch('images/gastronomia.json')
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (myJson) {
-        addItems(myJson.resources);
-      });
-  </script>
-  <template>
-    <li><img src="">
-    </li>
-  </template>
+    <meta property="og:site_name" content="Maximiliano Echenique">
+    <meta property="og:title" content="Maximiliano Echenique | Fotografía">
+    <!-- <meta property="og:url" content="https://ojibwa.netlify.com/"> -->
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Maximiliano Echenique">
+    <!-- <meta itemprop="url" content="https://ojibwa.netlify.com/"> -->
+    <meta name="twitter:title" content="Maximiliano Echenique">
+    <!-- <meta name="twitter:url" content="https://ojibwa.netlify.com/"> -->
+    <meta name="twitter:card" content="summary">
+    <!-- <meta name="description" content=""> -->
+    <!-- <script type="text/javascript" src="files/PcEbcRfKx720vi03zmZP-GJFCfxB07pHJB-W430ud1qfenX2fFHN4UJLFRbh52jhWD9tFcscjhItZQFqZRJtFRwtwAJtZRwhFs77MPG0ScNKZW4XdA8R-eB8demhjAoDO1FUiABkZWF3jAF8OcFzdPUCdhFydeyzSabCScNKZW4XdA8R-eB8demhjAoDOcFzdPUkdh48S1sl-AFGjAmCZWZyd1w0SaBujW48Sagyjh90jhNlOYiaikokdh48.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="css/utils.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/newgrid.css">
+    <script async src="js/GridLoadingEffects/modernizr-custom.js"></script>
+    <script src="js/template.js"></script>
+    <script>
+        fetch('images/gastronomia.json')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (myJson) {
+                addItems(myJson.resources);
+            });
+    </script>
+    <template>
+        <li class="grid-item"><img src="">
+        </li>
+    </template>
 </head>
 
 <body>
-  <header id="header">
-    <div id="logo">
-      <h1 class="logo">
-        <a href="/">Maximiliano Echenique</a>
-      </h1>
-      <div class="logo-subtitle">Uruguay Photographer</div>
-    </div>
-    <nav class="main-nav dropdown-hide">
-      <ul>
-        <span class="large-hide">Menu</span>
-        <li>
-          <a href="#">Portfolio</a>
-          <ul class="subnav">
-            <li class="gallery-collection">
-              <a href="#">Gastronomia</a>
-            </li>
-            <li class="gallery-collection">
-              <a href="#">Eventos</a>
-            </li>
-            <li class="gallery-collection">
-              <a href="#">Retratos</a>
-            </li>
-            <li class="gallery-collection">
-              <a href="#">Marcas</a>
-            </li>
-            <li class="gallery-collection">
-              <a href="#">Calle</a>
-            </li>
-            <li class="gallery-collection">
-              <a href="#">Institucional</a>
-            </li>
-            <li class="gallery-collection">
-              <a href="#">Documental</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Sobre mi</a>
-        </li>
-        <li>
-          <a href="#">Contacto</a>
-        </li>
-      </ul>
-    </nav>
-    <div id="backToThumbs">×</div>
-  </header>
-  <section class="slider">
-    <ul class="grid effect-2" id="grid">
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/40962385445_95c8f806ff_o.jpg">
-      </li>
+    <header id="header">
+        <div id="logo">
+            <h1 class="logo">
+                <a href="/">Maximiliano Echenique</a>
+            </h1>
+            <div class="logo-subtitle">Uruguay Photographer</div>
+        </div>
+        <nav class="main-nav dropdown-hide">
+            <ul>
+                <span class="large-hide">Menu</span>
+                <li>
+                    <a href="#">Portfolio</a>
+                    <ul class="subnav">
+                        <li class="gallery-collection">
+                            <a href="#">Gastronomia</a>
+                        </li>
+                        <li class="gallery-collection">
+                            <a href="#">Eventos</a>
+                        </li>
+                        <li class="gallery-collection">
+                            <a href="#">Retratos</a>
+                        </li>
+                        <li class="gallery-collection">
+                            <a href="#">Marcas</a>
+                        </li>
+                        <li class="gallery-collection">
+                            <a href="#">Calle</a>
+                        </li>
+                        <li class="gallery-collection">
+                            <a href="#">Institucional</a>
+                        </li>
+                        <li class="gallery-collection">
+                            <a href="#">Documental</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Sobre mi</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="backToThumbs">×</div>
+    </header>
+    <section class="slider">
+        <ul class="grid" id="grid">
+            <div class="grid-sizer"></div>
+        </ul>
+    </section>
+    <script src="js/interaction.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script>var grid = document.querySelector('.grid');
+        var msnry;
 
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_1925.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7448.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7249.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7860.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/44025421582_92dd5651c4_o.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_1512.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_5870.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_8820.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_9109.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7459.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7407.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7405.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7320.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_3:2,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/28572850393_cfff1b8fc9_o.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_1581.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_3:2,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7775.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_0412.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_5896.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_8799.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_3:2,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_5850.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7539.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_5914.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_3:2,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/38390459384_7ca6a6955c_o.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_5873.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_3:2,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/38390456884_a1dd5728aa_o.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7774.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_8907.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_0791.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_3:2,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_9074.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_0410.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7601.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7763.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7518.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_3:2,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/24239693247_a5b972b787_o.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_9077.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7239.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7543.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7220.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_3:2,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/38390462534_fd3c4c5d56_o.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7590.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_3:2,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_2541.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_3:2,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_5869.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_0549.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_3:2,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_2540.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_0805.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7761.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_9075.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7574.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_5875.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7840.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_3:2,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_5855.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_3335:5003,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_5861.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7923.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_9:16,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/C0011T01-2.jpg">
-      </li>
-
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7290.jpg">
-      </li>
-    </ul>
-  </section>
-  <script src="./js/interaction.js"></script>
-  <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script> -->
-  <script src="js/GridLoadingEffects/masonry.js"></script>
-  <script src="js/GridLoadingEffects/imagesloaded.js"></script>
-  <script src="js/GridLoadingEffects/classie.js"></script>
-  <script src="js/GridLoadingEffects/AnimOnScroll.js"></script>
-  <script>
-    new AnimOnScroll(document.getElementById('grid'), {
-      minDuration: 0.4,
-      maxDuration: 0.7,
-      viewportFactor: 0.2
-    });
-  </script>
+        imagesLoaded(grid, function () {
+            // init Isotope after all images have loaded
+            msnry = new Masonry(grid, {
+                itemSelector: '.grid-item',
+                columnWidth: '.grid-sizer',
+                percentPosition: true
+            });
+        });
+    </script>
+    <!-- <script src="js/GridLoadingEffects/masonry.js"></script> -->
+    <!-- <script src="js/GridLoadingEffects/imagesloaded.js"></script> -->
+    <!-- <script src="js/GridLoadingEffects/classie.js"></script> -->
+    <!-- <script src="js/GridLoadingEffects/AnimOnScroll.js"></script> -->
+    <!-- <script>
+        new AnimOnScroll(document.getElementById('grid'), {
+            minDuration: 0.4,
+            maxDuration: 0.7,
+            viewportFactor: 0.2
+        });
+    </script> -->
 </body>
 
 </html>

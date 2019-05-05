@@ -46,7 +46,7 @@
     
     // --------------------------  -------------------------- //
     
-    function defineImagesLoaded( EventEmitter, eventie ) {
+    function defineImagesLoaded( EvEmitter, eventie ) {
     
       /**
        * @param {Array, Element, NodeList, String} elem
@@ -90,7 +90,7 @@
         });
       }
     
-      ImagesLoaded.prototype = new EventEmitter();
+      ImagesLoaded.prototype = new EvEmitter();
     
       ImagesLoaded.prototype.options = {};
     
@@ -190,7 +190,7 @@
         this.img = img;
       }
     
-      LoadingImage.prototype = new EventEmitter();
+      LoadingImage.prototype = new EvEmitter();
     
       LoadingImage.prototype.check = function() {
         // first check cached any previous images that have same src
@@ -268,14 +268,14 @@
     if ( typeof define === 'function' && define.amd ) {
       // AMD
       define( [
-          'eventEmitter',
+          'EvEmitter',
           'eventie'
         ],
         defineImagesLoaded );
     } else {
       // browser global
       window.imagesLoaded = defineImagesLoaded(
-        window.EventEmitter,
+        window.EvEmitter,
         window.eventie
       );
     }
