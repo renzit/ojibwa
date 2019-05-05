@@ -41,13 +41,13 @@
       })
       .then(function (myJson) {
         addItems(myJson.resources);
-        myJson.resources.forEach((ph) => {
-          // console.log('public id');
-          // console.log(ph.public_id);
-        })
-        // console.log(JSON.stringify(myJson.resources));
       });
   </script>
+  <template>
+    <li><img
+        src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7320.jpg">
+    </li>
+  </template>
 </head>
 
 <body>
@@ -100,15 +100,7 @@
   <section class="slider">
     <ul class="grid effect-2" id="grid">
     </ul>
-
-    <template>
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7320.jpg">
-      </li>
-    </template>
   </section>
-
-
   <script src="./js/interaction.js"></script>
   <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script> -->
   <script src="js/GridLoadingEffects/masonry.js"></script>
