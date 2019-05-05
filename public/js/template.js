@@ -15,7 +15,6 @@ function addItems(itemList) {
     });
     var msnry;
     imagesLoaded(grid, function () {
-        console.log('imageLoaded');
         // init Isotope after all images have loaded
         msnry = new Masonry(grid, {
             itemSelector: '.grid-item',
