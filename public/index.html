@@ -43,7 +43,7 @@
         addItems(myJson.resources);
       });
   </script>
-  <template>
+  <template id="item-template">
     <li><img
         src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7320.jpg">
     </li>
@@ -53,6 +53,13 @@
     <script src="js/GridLoadingEffects/imagesloaded.js"></script>
     <script src="js/GridLoadingEffects/classie.js"></script>
     <script src="js/GridLoadingEffects/AnimOnScroll.js"></script>
+    <script>
+      new AnimOnScroll(document.getElementById('grid'), {
+        minDuration: 0.4,
+        maxDuration: 0.7,
+        viewportFactor: 0.2
+      });
+    </script>
   </template>
 </head>
 
@@ -110,14 +117,6 @@
   <script src="./js/interaction.js"></script>
   <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script> -->
   <script>console.log('cargo masonry');</script>
-
-  <script>
-    new AnimOnScroll(document.getElementById('grid'), {
-      minDuration: 0.4,
-      maxDuration: 0.7,
-      viewportFactor: 0.2
-    });
-  </script>
 </body>
 
 </html>
