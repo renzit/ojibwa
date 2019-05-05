@@ -31,7 +31,6 @@
   <link rel="stylesheet" type="text/css" href="./css/fonts.css">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <link rel="stylesheet" type="text/css" href="./css/menu.css">
-  <link rel="stylesheet" type="text/css" href="./css/featured-slider.css">
   <link rel="stylesheet" type="text/css" href="./css/grid.css">
   <script src="./js/GridLoadingEffects/modernizr-custom.js"></script>
 </head>
@@ -85,53 +84,33 @@
   </header>
   <section class="slider">
     <ul class="grid effect-2" id="grid">
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_9:16,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_1925.jpg">
-      </li>
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_4:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7448.jpg">
-      </li>
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7249.jpg">
-      </li>
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7860.jpg">
-      </li>
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/44025421582_92dd5651c4_o.jpg">
-      </li>
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_1512.jpg">
-      </li>
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_5870.jpg">
-      </li>
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_8820.jpg">
-      </li>
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_9109.jpg">
-      </li>
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7459.jpg">
-      </li>
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7407.jpg">
-      </li>
-      <li><img
-          src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7405.jpg">
-      </li>
+    </ul>
+
+    <template>
       <li><img
           src="https://res.cloudinary.com/renzit/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7320.jpg">
       </li>
-    </ul>
-
+    </template>
   </section>
+  <script src="./js/template.js"></script>
+  <script>
+    fetch('images/gastronomia.json')
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (myJson) {
+        addItems(myJson.resources);
+        myJson.resources.forEach((ph) => {
+          // console.log('public id');
+          // console.log(ph.public_id);
+        })
+        // console.log(JSON.stringify(myJson.resources));
+      });
+  </script>
+
   <script src="./js/interaction.js"></script>
   <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script> -->
-  <script src="./js/GridLoadingEffects/masonry.js"></script>
-
-  <!-- <script src="js/masonry.pkgd.min.js"></script> -->
+  <script src="js/GridLoadingEffects/masonry.js"></script>
   <script src="js/GridLoadingEffects/imagesloaded.js"></script>
   <script src="js/GridLoadingEffects/classie.js"></script>
   <script src="js/GridLoadingEffects/AnimOnScroll.js"></script>
