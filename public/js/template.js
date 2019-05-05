@@ -13,6 +13,18 @@ function addItems(itemList) {
         //element.setAttribute('data-src', `https://res.cloudinary.com/renzit/image/upload/w_1000,ar_${aspectRatio},c_fill,g_auto,e_sharpen/${item.public_id}.webp`);
         grid.appendChild(node);
     });
+    var grid = document.querySelector('.grid');
+        var msnry;
+
+        imagesLoaded(grid, function () {
+            console.log('imageLoaded');
+            // init Isotope after all images have loaded
+            msnry = new Masonry(grid, {
+                itemSelector: '.grid-item',
+                columnWidth: '.grid-sizer',
+                percentPosition: true
+            });
+        });
     // const templateScripts = document.querySelector('#template-scripts');
     // const scripts = document.importNode(templateScripts.content, true);
     // document.body.appendChild(scripts);
