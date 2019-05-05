@@ -35,7 +35,7 @@
     <!-- <script async src="js/GridLoadingEffects/modernizr-custom.js"></script> -->
 
     <template>
-        <li class="grid-item"><img src="">
+        <li class="grid-item"><img class="lazy" src="">
         </li>
     </template>
 
@@ -94,6 +94,10 @@
         </ul>
     </section>
     <script src="js/interaction.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
     <script src="js/template.js"></script>
     <script>
         fetch('images/gastronomia.json')
@@ -104,21 +108,10 @@
                 addItems(myJson.resources);
             });
     </script>
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
 
-    <script>var grid = document.querySelector('.grid');
-        var msnry;
 
-        imagesLoaded(grid, function () {
-            console.log('imageLoaded');
-            // init Isotope after all images have loaded
-            msnry = new Masonry(grid, {
-                itemSelector: '.grid-item',
-                columnWidth: '.grid-sizer',
-                percentPosition: true
-            });
-        });
+
+    <script>
     </script>
     <!-- <script src="js/GridLoadingEffects/masonry.js"></script> -->
     <!-- <script src="js/GridLoadingEffects/imagesloaded.js"></script> -->
