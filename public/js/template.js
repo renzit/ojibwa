@@ -2,7 +2,7 @@
 
 function addItems(itemList){
     const template = document.querySelector('#item-template');
-    const templateScripts = document.querySelector('#item-template');
+    const templateScripts = document.querySelector('#template-scripts');
     const  scripts = document.importNode(templateScripts.content, true);
     const grid = document.querySelector('#grid');
     itemList.forEach(item => {
