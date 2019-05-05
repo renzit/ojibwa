@@ -32,21 +32,13 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link rel="stylesheet" type="text/css" href="css/newgrid.css">
-    <script async src="js/GridLoadingEffects/modernizr-custom.js"></script>
-    <script src="js/template.js"></script>
-    <script>
-        fetch('images/gastronomia.json')
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (myJson) {
-                addItems(myJson.resources);
-            });
-    </script>
+    <!-- <script async src="js/GridLoadingEffects/modernizr-custom.js"></script> -->
+
     <template>
         <li class="grid-item"><img src="">
         </li>
     </template>
+
 </head>
 
 <body>
@@ -102,6 +94,16 @@
         </ul>
     </section>
     <script src="js/interaction.js"></script>
+    <script src="js/template.js"></script>
+    <script>
+        fetch('images/gastronomia.json')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (myJson) {
+                addItems(myJson.resources);
+            });
+    </script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script>var grid = document.querySelector('.grid');
