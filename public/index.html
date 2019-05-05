@@ -32,7 +32,22 @@
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <link rel="stylesheet" type="text/css" href="./css/menu.css">
   <link rel="stylesheet" type="text/css" href="./css/grid.css">
-  <script src="./js/GridLoadingEffects/modernizr-custom.js"></script>
+  <script async src="./js/GridLoadingEffects/modernizr-custom.js"></script>
+  <script src="./js/template.js"></script>
+  <script>
+    fetch('images/gastronomia.json')
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (myJson) {
+        addItems(myJson.resources);
+        myJson.resources.forEach((ph) => {
+          // console.log('public id');
+          // console.log(ph.public_id);
+        })
+        // console.log(JSON.stringify(myJson.resources));
+      });
+  </script>
 </head>
 
 <body>
@@ -92,21 +107,7 @@
       </li>
     </template>
   </section>
-  <script src="./js/template.js"></script>
-  <script>
-    fetch('images/gastronomia.json')
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (myJson) {
-        addItems(myJson.resources);
-        myJson.resources.forEach((ph) => {
-          // console.log('public id');
-          // console.log(ph.public_id);
-        })
-        // console.log(JSON.stringify(myJson.resources));
-      });
-  </script>
+
 
   <script src="./js/interaction.js"></script>
   <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script> -->
