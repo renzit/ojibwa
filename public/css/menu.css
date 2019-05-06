@@ -53,6 +53,10 @@ ul {
     display: none;
 }
 
+.show{
+    display: block;
+}
+
 #backToThumbs {
     display: none;
 }
@@ -86,7 +90,7 @@ ul {
 
     }
 
-    .main-nav.clicked ul li {
+    .main-nav.opened ul li {
         display: block;
     }
 
@@ -94,8 +98,14 @@ ul {
         display: block;
     }
 
-    .main-nav ul {
+    /* .main-nav ul {
         margin: 14px 32px;
+    } */
+    .subnav{
+        background-color: black;
+    }
+    .subnav a{
+        color: #eee;
     }
 }
 
