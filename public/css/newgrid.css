@@ -1,4 +1,3 @@
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 .grid {
     max-width: 69em;
@@ -33,14 +32,16 @@
   }
   
 
-  @media screen and (max-width: 400px){
-    .grid li {
-        width: 100%;
-    }
-  }
+
 
   @media screen and (max-width: 900px){
     .grid li {
         width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 400px){
+    .grid li {
+        width: 100%;
     }
   }

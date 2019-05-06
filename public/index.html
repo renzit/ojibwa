@@ -34,8 +34,17 @@
     <link rel="stylesheet" type="text/css" href="css/newgrid.css">
     <!-- <script async src="js/GridLoadingEffects/modernizr-custom.js"></script> -->
 
-    <template>
-        <li class="grid-item"><img class="lazy" src="">
+    <template id="item-template-img">
+        <li class="grid-item"><img class="lazy" src="" data-src="">
+        </li>
+    </template>
+
+    <template id="item-template-picture">
+        <li class="grid-item">
+            <picture>
+                <source type="image/webp" data-sizes="100w">
+                <img alt="" class="lazy" src="" data-sizes="100w">
+            </picture>
         </li>
     </template>
 
@@ -89,7 +98,7 @@
         <div id="backToThumbs">×</div>
     </header>
     <section class="slider">
-        <ul class="grid" id="grid">
+        <ul class="grid">
             <div class="grid-sizer"></div>
         </ul>
     </section>
