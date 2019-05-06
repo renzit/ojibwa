@@ -1,5 +1,6 @@
-const mainNav = document.querySelector(".main-nav");
-mainNav.addEventListener("click", function(event){
-    console.log('clicked');
-    mainNav.classList.toggle('clicked');
+const subnav = document.querySelector(".subnav");
+subnav.addEventListener("click", function(event){
+    console.log('hola');
+    const path = event.target.dataset.collection
+    getResourceList(path);
 });

@@ -26,18 +26,11 @@
     <!-- <meta name="twitter:url" content="https://ojibwa.netlify.com/"> -->
     <meta name="twitter:card" content="summary">
     <!-- <meta name="description" content=""> -->
-    <!-- <script type="text/javascript" src="files/PcEbcRfKx720vi03zmZP-GJFCfxB07pHJB-W430ud1qfenX2fFHN4UJLFRbh52jhWD9tFcscjhItZQFqZRJtFRwtwAJtZRwhFs77MPG0ScNKZW4XdA8R-eB8demhjAoDO1FUiABkZWF3jAF8OcFzdPUCdhFydeyzSabCScNKZW4XdA8R-eB8demhjAoDOcFzdPUkdh48S1sl-AFGjAmCZWZyd1w0SaBujW48Sagyjh90jhNlOYiaikokdh48.js"></script> -->
     <link rel="stylesheet" type="text/css" href="css/utils.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/menu.css">
-    <link rel="stylesheet" type="text/css" href="css/newgrid.css">
-    <!-- <script async src="js/GridLoadingEffects/modernizr-custom.js"></script> -->
-
-    <template id="item-template-img">
-        <li class="grid-item"><img class="lazy" src="" data-src="">
-        </li>
-    </template>
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
 
     <template id="item-template-picture">
         <li class="grid-item">
@@ -65,25 +58,25 @@
                     <a href="#">Portfolio</a>
                     <ul class="subnav">
                         <li class="gallery-collection">
-                            <a href="#">Gastronomia</a>
+                            <a href="#" data-collection="images/gastronomia.json">Gastronomia</a>
                         </li>
                         <li class="gallery-collection">
-                            <a href="#">Eventos</a>
+                            <a href="#" data-collection="images/eventos.json">Eventos</a>
                         </li>
                         <li class="gallery-collection">
-                            <a href="#">Retratos</a>
+                            <a href="#" data-collection="images/retratos.json">Retratos</a>
                         </li>
                         <li class="gallery-collection">
-                            <a href="#">Marcas</a>
+                            <a href="#" data-collection="images/marcas.json">Marcas</a>
+                        </li>
+                        <!-- <li class="gallery-collection">
+                            <a href="#" data-collection="images/calle.json">Calle</a>
                         </li>
                         <li class="gallery-collection">
-                            <a href="#">Calle</a>
-                        </li>
+                            <a href="#" data-collection="images/institucional.json">Institucional</a>
+                        </li> -->
                         <li class="gallery-collection">
-                            <a href="#">Institucional</a>
-                        </li>
-                        <li class="gallery-collection">
-                            <a href="#">Documental</a>
+                            <a href="#" data-collection="images/documental.json">Documental</a>
                         </li>
                     </ul>
                 </li>
@@ -107,32 +100,9 @@
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.5.1/intersection-observer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
-    <script src="js/template.js"></script>
-    <script>
-        fetch('images/gastronomia.json')
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (myJson) {
-                addItems(myJson.resources);
-            });
-    </script>
-
-
-
+    <script src="js/grid-items.js"></script>
     <script>
     </script>
-    <!-- <script src="js/GridLoadingEffects/masonry.js"></script> -->
-    <!-- <script src="js/GridLoadingEffects/imagesloaded.js"></script> -->
-    <!-- <script src="js/GridLoadingEffects/classie.js"></script> -->
-    <!-- <script src="js/GridLoadingEffects/AnimOnScroll.js"></script> -->
-    <!-- <script>
-        new AnimOnScroll(document.getElementById('grid'), {
-            minDuration: 0.4,
-            maxDuration: 0.7,
-            viewportFactor: 0.2
-        });
-    </script> -->
 </body>
 
 </html>
