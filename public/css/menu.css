@@ -102,10 +102,11 @@ ul {
 @media only screen and (min-width: 56.94444em) {
     .main-nav li {
         display: inline-block;
-        padding: 0 20px;
+        margin: 0 20px;
     }
 
     .main-nav li:hover .subnav {
+        z-index: 2;
         display: block;
     }
 
@@ -117,8 +118,14 @@ ul {
 
     li.gallery-collection {
         display: block;
-        padding-left: 8px;
+        padding: 0 8px;
         text-align: left;
         border-top: 1px solid #eee;
+        margin:0;
+    }
+    .gallery-collection a{
+        text-align: left;
+        display: block;
+        padding: 4px 0;
     }
 }
