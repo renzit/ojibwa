@@ -128,6 +128,7 @@
             line-height: 2em;
         }
     </style>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <script type=application/ld+json>{ "@context" : "http://schema.org" , "@type" : "NewsArticle" , "mainEntityOfPage" :
         { "@type" : "jpgage" , "@id" : "https://www.ojibwa.com/cafe.html" }, "headline" : "Fotografía Gastronómica | Café
     , " description" : "Fotografía Gastronómica Café" , "author" : { "@type" : "Person" , "name"
@@ -138,6 +139,18 @@
 </head>
 
 <body>
+    <amp-analytics type="gtag" data-credentials="include">
+        <script type="application/json">
+                {
+                  "vars" : {
+                    "gtag_id": "UA-138431976-1",
+                    "config" : {
+                      "UA-138431976-1": { "groups": "default" }
+                    }
+                  }
+                }
+                </script>
+    </amp-analytics>
     <amp-story standalone title="Fotografía Gastronómica | Cafe" publisher="ojibwaph"
         publisher-logo-src="assets/AMP-Brand-White-Icon-1x1.svg"
         poster-portrait-src="https://res.cloudinary.com/renzit/image/upload/w_720,q_auto,ar_3:4,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7574.jpg">
