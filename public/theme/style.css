@@ -13935,3 +13935,9 @@ body:not(.no-transition) #wrapper,
 }
 
 
+/* custom */
+#logo h2{
+	font-size: 22px;
+	padding: 13px 0;
+	margin: 0;
+}
