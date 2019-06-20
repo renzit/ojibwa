@@ -1,0 +1,213 @@
+<!-- Flip Card Section
+				============================================= -->
+				<div class="section dark">
+					<div class="container clearfix">
+
+						<div class="row align-items-center justify-content-between">
+
+							<div class="col-lg-4 parallax" data-bottom-top="margin-top:-50px" data-top-bottom="margin-top:50px">
+								<small class="text-muted uppercase t300 ls4 mb-1 d-block">Experiencia</small>
+
+								<h2 class="t700 ls0 mb-4" style="font-size: 38px;">He estado tomando fotografías durante los últimos 5 años.</h2>
+								<p class="text-muted" style="font-size: 16px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur blanditiis saepe dolore tempora nihil praesentium dolorum unde, earum, nostrum odit?</p>
+							</div>
+
+							<div class="col-lg-7">
+								<div class="row">
+
+									<div class="col-sm-6">
+										<!-- Flip Card
+										============================================= -->
+										<div class="flip-card dark">
+											<div class="front no-after" style="background-color: #050505">
+												<div class="inner">
+													<div class="feature-box media-box">
+														<div class="fbox-icon position-relative mb-4" style="width: 38px;height: 38px">
+															<a href="#">
+																<img src="demos/photographer/images/icons/camera1.svg" class="noradius nobg tleft" alt="Image">
+															</a>
+														</div>
+														<div class="fbox-desc">
+															<h3 class="t400 nott text-white">Retratos</h3>
+															<p class="text-muted t500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="back" style="background-image: url('https://res.cloudinary.com/renzit/image/upload/w_800,q_auto,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Retratos/IMG_1008.webp')">
+												<div class="inner mt-3">
+													<h4 class="mb-4 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit.</h4>
+													<a href="#" class="button button-change ohidden rounded nott t300 m-0">
+														<span>View Photos</span>
+														<span>View Photos</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-sm-6 mb-5">
+										<!-- Flip Card
+										============================================= -->
+										<div class="flip-card dark">
+											<div class="front no-after" style="background-color: #050505">
+												<div class="inner">
+													<div class="feature-box media-box">
+														<div class="fbox-icon position-relative mb-4" style="width: 38px;height: 38px">
+															<a href="#">
+																<img src="demos/photographer/images/icons/travel.svg" class="noradius nobg tleft" alt="Image">
+															</a>
+														</div>
+														<div class="fbox-desc">
+															<h3 class="t400 nott text-white">Eventos</h3>
+															<p class="text-muted t500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="back" style="background-image: url('https://res.cloudinary.com/renzit/image/upload/w_800,q_auto,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Eventos/DSC00434.webp')">
+												<div class="inner mt-3">
+													<h4 class="mb-4 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit.</h4>
+													<a href="#" class="button button-change ohidden rounded nott t300 m-0">
+														<span>View Photos</span>
+														<span>View Photos</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-sm-6 mb-5">
+										<!-- Flip Card
+										============================================= -->
+										<div class="flip-card dark">
+											<div class="front no-after" style="background-color: #050505">
+												<div class="inner">
+													<div class="feature-box media-box">
+														<div class="fbox-icon position-relative mb-4" style="width: 38px;height: 38px">
+															<a href="#">
+																<img src="demos/photographer/images/icons/wedding.svg" class="noradius nobg tleft" alt="Image">
+															</a>
+														</div>
+														<div class="fbox-desc">
+															<h3 class="t400 nott text-white">Motocicletas</h3>
+															<p class="text-muted t500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="back" style="background-image: url('https://res.cloudinary.com/renzit/image/upload/w_800,q_auto,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Eventos/DSC00529.webp')">
+												<div class="inner mt-3">
+													<h4 class="mb-4 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit.</h4>
+													<a href="#" class="button button-change ohidden rounded nott t300 m-0">
+														<span>View Photos</span>
+														<span>View Photos</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-sm-6">
+										<!-- Flip Card
+										============================================= -->
+										<div class="flip-card dark">
+											<div class="front no-after" style="background-color: #050505">
+												<div class="inner">
+													<div class="feature-box media-box">
+														<div class="fbox-icon position-relative mb-4" style="width: 38px;height: 38px">
+															<a href="#">
+																<img src="demos/photographer/images/icons/camera2.svg" class="noradius nobg tleft" alt="Image">
+															</a>
+														</div>
+														<div class="fbox-desc">
+															<h3 class="t400 nott text-white">Café</h3>
+															<p class="text-muted t500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="back" style="background-image: url('https://res.cloudinary.com/renzit/image/upload/w_800,q_auto,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_7220.webp')">
+												<div class="inner mt-3">
+													<h4 class="mb-4 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit.</h4>
+													<a href="#" class="button button-change ohidden rounded nott t300 m-0">
+														<span>View Photos</span>
+														<span>View Photos</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+        <!-- Service Section
+				============================================= -->
+				<div class="section nobg">
+
+					<div class="container">
+						<div class="col-sm-6 dark mb-5">
+							<small class="text-muted uppercase t300 ls3 d-block">Pasos de trabajos</small>
+							<h2 class="t700 ls0 mb-3" style="font-size: 46px;">Procesos y herramientas.</h2>
+							<p class="text-muted" style="font-size: 16px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur blanditiis saepe dolore tempora nihil praesentium dolorum unde, earum, nostrum odit?</p>
+						</div>
+
+						<div class="row clearfix">
+
+							<!-- Card 1 -->
+							<div class="col-lg-4 col-md-6 mt-3">
+								<div class="card dark d-flex align-items-end flex-column p-3" style="height: 450px; background-color: #222; border: 1px solid #222">
+									<div></div>
+									<div class="mt-auto">
+										<div class="card-body">
+											<img src="demos/photographer/images/icons/shutter.svg" width="40" alt="Image" class="mb-4">
+											<h4 class="card-title t400">Lentes Actualizados:</h4>
+											<p class="card-text mb-0 mt-2 text-white-50 t300">Producir objetivamente mejoras en los procesos interoperables.</p><br>
+											<p class="card-text mb-0 text-white-50 t300">Producir objetivamente mejoras de procesos interoperables.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Card 2 -->
+							<div class="col-lg-4 col-md-6 mt-3">
+								<div class="card dark d-flex align-items-end flex-column p-3" style="height: 450px; background-color: #222; border: 1px solid #222">
+									<div></div>
+									<div class="mt-auto">
+										<div class="card-body">
+											<img src="demos/photographer/images/icons/video-camera.svg" width="40" alt="Image" class="mb-4">
+											<!-- Card<h4 class="card-title t -->
+											<h4 class="card-title t400">Grabación de videos:</h4>
+											<p class="card-text mb-0 mt-2 text-white-50 t300">Producir objetivamente mejoras en los procesos interoperables.</p><br>
+											<p class="card-text mb-0 text-white-50 t300">Producir objetivamente mejoras en los procesos interoperables.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Card 3 -->
+							<div class="col-lg-4 col-md-6 mt-3">
+								<div class="card dark d-flex align-items-end flex-column p-3" style="height: 450px; background-color: #222; border: 1px solid #222">
+									<div></div>
+									<div class="mt-auto">
+										<div class="card-body">
+											<div class="d-flex align-items-center mb-4">
+												<span><img src="demos/photographer/images/icons/lr.svg" width="35" alt="Image"></span>
+												<span class="px-3 h6 m-0 t300">&amp;</span>
+												<span><img src="demos/photographer/images/icons/psd.svg" width="35" alt="Image"></span>
+											</div>
+											<h4 class="card-title t400">Aplicaciones más usadas:</h4>
+											<p class="card-text mb-0 mt-2 text-white-50 t300">Producir objetivamente mejoras en los procesos interoperables..</p><br>
+											<p class="card-text mb-0 text-white-50 t300">Producir objetivamente mejoras en los procesos interoperables.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
