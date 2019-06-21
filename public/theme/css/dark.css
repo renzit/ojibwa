@@ -1255,6 +1255,9 @@ body #side-panel.dark #side-panel-trigger-close a {
 .dark .btn:hover,
 .dark .btn:focus { color: #FFF; }
 
+.dark .btn-outline-light:hover,
+.dark .btn-outline-light:focus { color: #212529; }
+
 .dark .btn-link:hover,
 .dark .btn-link:focus { color: #EEE; }
 
