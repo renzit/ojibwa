@@ -266,7 +266,7 @@
 
 	#logo {
 		display: block;
-		height: 100px;
+		height: 80px;
 		float: none;
 		margin: 0 auto 0 !important;
 		max-width: none;
@@ -285,7 +285,7 @@
 	#primary-menu-trigger {
 		opacity: 1;
 		pointer-events: auto;
-		top: 25px;
+		top: 15px;
 		margin-top: 0;
 		left: 0;
 		z-index: 1;

@@ -1123,7 +1123,7 @@ body.stretched #header.full-header .container {
 	opacity: 0;
 	pointer-events: none;
 	cursor: pointer;
-	font-size: 14px;
+	font-size: 28px;
 	position: absolute;
 	top: 50%;
 	margin-top: -25px;
@@ -13938,6 +13938,6 @@ body:not(.no-transition) #wrapper,
 /* custom */
 #logo h2{
 	font-size: 22px;
-	padding: 13px 0;
+	padding: 0;
 	margin: 0;
 }

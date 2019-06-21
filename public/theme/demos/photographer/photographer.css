@@ -117,7 +117,7 @@ body.dark,
 
 	#header,
 	#header-wrap,
-	#logo img { height: 60px; }
+	#logo img { height: 50px; }
 
 	#header.sticky-header:not(.static-sticky),
 	#header.sticky-header:not(.static-sticky) #header-wrap,
@@ -438,7 +438,7 @@ body.dark,
 	#header.dark.transparent-header, #header.dark.semi-transparent { background-color: var(--darkcolor); }
 
 	#primary-menu ul > li > a, #primary-menu.style-2 > div > ul > li > a {
-		padding: 10px !important;
+		padding: 10px 0 !important;
 		border-radius: 0 !important;
 		margin-right: inherit !important;
 	}
