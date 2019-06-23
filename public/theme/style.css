@@ -1137,6 +1137,10 @@ body.stretched #header.full-header .container {
 	transition: opacity .3s ease;
 }
 
+#primary-menu{
+	margin: 0 -38px;
+}
+
 #primary-menu ul {
 	list-style: none;
 	margin: 0;
@@ -1175,8 +1179,8 @@ body.stretched #header.full-header .container {
 #primary-menu ul li > a i {
 	position: relative;
 	top: -1px;
-	font-size: 14px;
-	width: 16px;
+	font-size: 25px;
+	width: 26px;
 	text-align: center;
 	margin-right: 6px;
 	vertical-align: top;
@@ -1190,7 +1194,6 @@ body.stretched #header.full-header .container {
 #primary-menu ul li:hover > a,
 #primary-menu ul li.current > a { color: #1ABC9C; }
 
-#primary-menu > ul > li.sub-menu > a > div { }
 
 body.no-superfish #primary-menu li:hover > ul:not(.mega-menu-column),
 body.no-superfish #primary-menu li:hover > .mega-menu-content { display: block; }
@@ -1260,6 +1263,8 @@ body.no-superfish #primary-menu li:hover > .mega-menu-content { display: block; 
 	-o-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 }
+
+
 
 #primary-menu ul ul li > a i { vertical-align: middle; }
 
@@ -1642,9 +1647,8 @@ body:not(.device-md):not(.device-sm):not(.device-xs) #primary-menu.style-2.cente
 	opacity: 0;
 	pointer-events: none;
 	position: fixed;
-	top: 25px;
 	left: auto;
-	right: 25px;
+	right: 434px;
 	width: 48px;
 	height: 48px;
 	line-height: 48px;
@@ -1723,6 +1727,10 @@ body:not(.device-md):not(.device-sm):not(.device-xs) #primary-menu.style-2.cente
 	-ms-transform: translateY(0);
 	-o-transform: translateY(0);
 	transform: translateY(0);
+}
+
+#primary-menu ul li > a i{
+	font-size:30px;
 }
 
 }
