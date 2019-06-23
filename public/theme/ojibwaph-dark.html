@@ -38,6 +38,17 @@
 	============================================= -->
 	<title>Maximiliano Echenique | Fotografía Y Video</title>
 
+	<!-- Teamplte image -->
+	<template id="item-template-picture">
+    <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap" data-animate="fadeInUp">
+      <div class="img-hover-card">
+        <a href="#"><img
+            src="https://res.cloudinary.com/renzit/image/upload/w_800,q_auto,ar_2:3,c_fill,g_auto,e_sharpen/OjibwaPh/Gastronomia/IMG_1925.webp"
+            alt="Image" class="lazy"></a>
+      </div>
+    </div>
+  </template>
+
 </head>
 
 <!-- Overlay Menu, Dark, Page Loader, Stretched (body)
@@ -103,7 +114,7 @@
 		<section id="slider" class="slider-element full-screen clearfix"
 			style="background: #050505 url('images/photographer/dots-white.png') 100% 0 no-repeat; background-size: 60%">
 
-			<div class="container">
+			<div class="container overflow-hidden">
 				<div class="vertical-middle">
 
 					<div class="row align-items-center">
@@ -123,12 +134,12 @@
 							</div>
 						</div>
 
-						<div class="offset-lg-1 col-lg-4 col-md-6 mt-4 mt-md-0">
+						<div class="offset-lg-1 col-lg-5 col-md-6 mt-4 mt-md-0">
 							<div class="row common-height">
-								<div class="col-lg-6 col-md-12 rounded col-6"
+								<div class="offset-lg-1 col-lg-5 col-md-12 rounded col-6"
 									style="background: url('images/ojibwa-maximiliano-echenique.jpg') center center no-repeat; background-size: cover">
 								</div>
-								<div class="col-lg-6 col-md-12 rounded col-6 d-flex max-height" style="background-color: #252525">
+								<div class="col-lg-5 col-md-12 rounded col-6 d-flex max-height" style="background-color: #252525">
 									<div class="feature-box not-dark px-3 py-4 fbox-small">
 										<div class="fbox-media align-self-start">
 											<img src="images/photographer/icons/instagram.svg" class="noradius nobg tleft" alt="Image"
@@ -570,6 +581,8 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script src="js/functions.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+	<script src="js/grid-items.js"></script>
 
 	<script>
 
