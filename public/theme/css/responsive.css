@@ -347,6 +347,7 @@
 		margin: 0 !important;
 		text-align: left !important;
 		border-top: 1px solid #EEE;
+		padding-left:40px;
 	}
 
 	#header.split-menu #primary-menu:not(.mobile-menu-off-canvas) > ul:not(:first-child) > li:first-child { border-top: 1px solid #EEE; }
@@ -1545,7 +1546,7 @@
 		padding-right: 40px !important;
 	}
 
-	#primary-menu-trigger { left: 40px; }
+	#primary-menu-trigger { left: 28px; }
 
 	#top-cart { display: none; }
 
