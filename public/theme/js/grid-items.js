@@ -1,12 +1,7 @@
-
-
 function addItems(itemList) {
     const templatePicture = document.querySelector('#item-template-picture');
     const grid = document.querySelector('.grid-container');
-    // const div = document.createElement('div');
-    // div.setAttribute('class', 'grid-sizer');
     grid.innerHTML = "";
-    //grid.appendChild(div);
     itemList.forEach(item => {
         aspectRatioLabel = getAspectRatioLabel(item.width, item.height);
         imgPlaceholder = `data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${item.width} ${item.height}"%3e%3crect fill="%23F8F8F8" width="100%25" height="100%25"/%3e%3c/svg%3e`;
@@ -19,20 +14,20 @@ function addItems(itemList) {
         https://res.cloudinary.com/renzit/image/upload/w_800,q_auto,ar_${aspectRatioLabel},c_fill,g_auto,e_sharpen/${item.public_id}.jpg 800w`);
 
         grid.appendChild(node);
+        imagesLoaded(grid, function () {
+            var iso = new Isotope( grid, {
+              // options
+              itemSelector: '.img-hover-wrap',
+              layoutMode: 'masonry'
+            });
+        });
     });
+
+
     jQuery(".img-hover-wrap").hover3d({
         selector: ".img-hover-card",
         shine: false,
     });
-
-    // var msnry;
-    // imagesLoaded(grid, function () {
-    //     msnry = new Masonry(grid, {
-    //         itemSelector: '.grid-item',
-    //         columnWidth: '.grid-sizer',
-    //         percentPosition: true
-    //     });
-    // });
 
     var lazyLoadInstance = new LazyLoad({
         elements_selector: ".lazy"
@@ -60,3 +55,12 @@ function getResourceList(path){
 }
 
 getResourceList('api/gastronomia.json');
+
+const filterCategory = document.querySelectorAll("#filter-category .dropdown-item");
+filterCategory.forEach(function (item) {
+    item.addEventListener("click", function (event) {
+        const path = item.dataset.collection;
+        getResourceList(path);
+
+    });
+});

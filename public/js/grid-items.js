@@ -27,7 +27,9 @@ function addItems(itemList) {
     });
 
     var msnry;
+    console.log(imagesLoaded);
     imagesLoaded(grid, function () {
+        console.log('cargaron las imagenes');
         msnry = new Masonry(grid, {
             itemSelector: '.grid-item',
             columnWidth: '.grid-sizer',
