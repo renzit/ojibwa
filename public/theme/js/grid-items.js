@@ -66,7 +66,7 @@ function initializeOJibwaGrid() {
         return getResourceList(`api/${filterBy}.json`, 'dciyig0yl')
     }
 
-    return getResourceList('api/gastronomia.json', 'renzit');
+    return getResourceList('api/gastronomia.json', 'dciyig0yl');
 }
 
 initializeOJibwaGrid();
