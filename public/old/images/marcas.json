@@ -1,0 +1,213 @@
+{
+    "url": "http://res.cloudinary.com/renzit/image/list/marcas.json",
+    "resources": [
+        {
+            "public_id": "OjibwaPh/Marcas/IMG_8476",
+            "version": 1557000419,
+            "format": "jpg",
+            "width": 3456,
+            "height": 5184,
+            "type": "upload",
+            "created_at": "2019-05-04T20:06:59Z"
+        },
+        {
+            "public_id": "OjibwaPh/Marcas/IMG_0746",
+            "version": 1557000416,
+            "format": "jpg",
+            "width": 3456,
+            "height": 5184,
+            "type": "upload",
+            "created_at": "2019-05-04T20:06:56Z"
+        },
+        {
+            "public_id": "OjibwaPh/Marcas/IMG_0751",
+            "version": 1557000415,
+            "format": "jpg",
+            "width": 3456,
+            "height": 5184,
+            "type": "upload",
+            "created_at": "2019-05-04T20:06:55Z"
+        },
+        {
+            "public_id": "OjibwaPh/Marcas/IMG_0098",
+            "version": 1557000413,
+            "format": "jpg",
+            "width": 3456,
+            "height": 5184,
+            "type": "upload",
+            "created_at": "2019-05-04T20:06:53Z"
+        },
+        {
+            "public_id": "OjibwaPh/Marcas/IMG_0234",
+            "version": 1557000412,
+            "format": "jpg",
+            "width": 3456,
+            "height": 5184,
+            "type": "upload",
+            "created_at": "2019-05-04T20:06:52Z"
+        },
+        {
+            "public_id": "OjibwaPh/Marcas/IMG_0252",
+            "version": 1557000412,
+            "format": "jpg",
+            "width": 5184,
+            "height": 3456,
+            "type": "upload",
+            "created_at": "2019-05-04T20:06:52Z"
+        },
+        {
+            "public_id": "OjibwaPh/Marcas/IMG_8367",
+            "version": 1557000412,
+            "format": "jpg",
+            "width": 3456,
+            "height": 5184,
+            "type": "upload",
+            "created_at": "2019-05-04T20:06:52Z"
+        },
+        {
+            "public_id": "OjibwaPh/Marcas/IMG_8459",
+            "version": 1557000412,
+            "format": "jpg",
+            "width": 3456,
+            "height": 5184,
+            "type": "upload",
+            "created_at": "2019-05-04T20:06:52Z"
+        },
+        {
+            "public_id": "OjibwaPh/Marcas/IMG_0693",
+            "version": 1557000408,
+            "format": "jpg",
+            "width": 3456,
+            "height": 5184,
+            "type": "upload",
+            "created_at": "2019-05-04T20:06:48Z"
+        },
+        {
+            "public_id": "OjibwaPh/Marcas/IMG_0140",
+            "version": 1557000408,
+            "format": "jpg",
+            "width": 3456,
+            "height": 5184,
+            "type": "upload",
+            "created_at": "2019-05-04T20:06:48Z"
+        },
+        {
+            "public_id": "OjibwaPh/Marcas/IMG_8609",
+            "version": 1557000404,
+            "format": "jpg",
+            "width": 3456,
+            "height": 5184,
+            "type": "upload",
+            "created_at": "2019-05-04T20:06:44Z"
+        },
+        {
+            "public_id": "OjibwaPh/Marcas/IMG_0232",
+            "version": 1557000403,
+            "format": "jpg",
+            "width": 3456,
+            "height": 5184,
+            "type": "upload",
+            "created_at": "2019-05-04T20:06:43Z"
+        },
+        {
+            "public_id": "OjibwaPh/Marcas/IMG_8399",
+            "version": 1557000403,
+            "format": "jpg",
+            "width": 3456,
+            "height": 5184,
+            "type": "upload",
+            "created_at": "2019-05-04T20:06:43Z"
+        },
+        {
+            "public_id": "OjibwaPh/Marcas/IMG_0741",
+            "version": 1557000402,
+            "format": "jpg",
+            "width": 3456,
+            "height": 5184,
+            "type": "upload",
+            "created_at": "2019-05-04T20:06:42Z"
+        },
+        {
+            "public_id": "OjibwaPh/Marcas/IMG_8618",
+            "version": 1557000402,
+            "format": "jpg",
+            "width": 3456,
+            "height": 5184,
+            "type": "upload",
+            "created_at": "2019-05-04T20:06:42Z"
+        },
+        {
+            "public_id": "OjibwaPh/Marcas/IMG_0142",
+            "version": 1557000401,
+            "format": "jpg",
+            "width": 3456,
+            "height": 5184,
+            "type": "upload",
+            "created_at": "2019-05-04T20:06:41Z"
+        },
+        {
+            "public_id": "OjibwaPh/Marcas/IMG_0747",
+            "version": 1557000399,
+            "format": "jpg",
+            "width": 3456,
+            "height": 5184,
+            "type": "upload",
+            "created_at": "2019-05-04T20:06:39Z"
+        },
+        {
+            "public_id": "OjibwaPh/Marcas/IMG_0712",
+            "version": 1557000399,
+            "format": "jpg",
+            "width": 3456,
+            "height": 5184,
+            "type": "upload",
+            "created_at": "2019-05-04T20:06:39Z"
+        },
+        {
+            "public_id": "OjibwaPh/Marcas/IMG_8464",
+            "version": 1557000398,
+            "format": "jpg",
+            "width": 3456,
+            "height": 5184,
+            "type": "upload",
+            "created_at": "2019-05-04T20:06:38Z"
+        },
+        {
+            "public_id": "OjibwaPh/Marcas/IMG_0249",
+            "version": 1557000398,
+            "format": "jpg",
+            "width": 3456,
+            "height": 5184,
+            "type": "upload",
+            "created_at": "2019-05-04T20:06:38Z"
+        },
+        {
+            "public_id": "OjibwaPh/Marcas/IMG_8517",
+            "version": 1557000396,
+            "format": "jpg",
+            "width": 3456,
+            "height": 5184,
+            "type": "upload",
+            "created_at": "2019-05-04T20:06:36Z"
+        },
+        {
+            "public_id": "OjibwaPh/Marcas/IMG_0694",
+            "version": 1557000394,
+            "format": "jpg",
+            "width": 3456,
+            "height": 5184,
+            "type": "upload",
+            "created_at": "2019-05-04T20:06:34Z"
+        },
+        {
+            "public_id": "OjibwaPh/Marcas/IMG_8612",
+            "version": 1557000395,
+            "format": "jpg",
+            "width": 3456,
+            "height": 5184,
+            "type": "upload",
+            "created_at": "2019-05-04T20:06:35Z"
+        }
+    ],
+    "updated_at": "2019-05-04T21:04:28Z"
+}
