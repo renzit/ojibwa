@@ -1,4 +1,4 @@
-function addItems(itemList) {
+function addItems(itemList, user) {
     const templatePicture = document.querySelector('#item-template-picture');
     const grid = document.querySelector('.grid-container');
     grid.innerHTML = "";
@@ -8,17 +8,17 @@ function addItems(itemList) {
         const node = document.importNode(templatePicture.content, true);
         const image = node.querySelector('img');
         image.src = imgPlaceholder;
-        image.setAttribute('data-src', `https://res.cloudinary.com/renzit/image/upload/w_400,q_auto,ar_${aspectRatioLabel},c_fill,g_auto,e_sharpen/${item.public_id}.jpg`);
-        image.setAttribute('data-srcset', 
-        `https://res.cloudinary.com/renzit/image/upload/w_400,q_auto,ar_${aspectRatioLabel},c_fill,g_auto,e_sharpen/${item.public_id}.jpg 400w,
-        https://res.cloudinary.com/renzit/image/upload/w_800,q_auto,ar_${aspectRatioLabel},c_fill,g_auto,e_sharpen/${item.public_id}.jpg 800w`);
+        image.setAttribute('data-src', `https://res.cloudinary.com/${user}/image/upload/w_400,q_auto,ar_${aspectRatioLabel},c_fill,g_auto,e_sharpen/${item.public_id}.jpg`);
+        image.setAttribute('data-srcset',
+            `https://res.cloudinary.com/${user}/image/upload/w_400,q_auto,ar_${aspectRatioLabel},c_fill,g_auto,e_sharpen/${item.public_id}.jpg 400w,
+        https://res.cloudinary.com/${user}/image/upload/w_800,q_auto,ar_${aspectRatioLabel},c_fill,g_auto,e_sharpen/${item.public_id}.jpg 800w`);
 
         grid.appendChild(node);
         imagesLoaded(grid, function () {
-            var iso = new Isotope( grid, {
-              // options
-              itemSelector: '.img-hover-wrap',
-              layoutMode: 'masonry'
+            var iso = new Isotope(grid, {
+                // options
+                itemSelector: '.img-hover-wrap',
+                layoutMode: 'masonry'
             });
         });
     });
@@ -43,20 +43,35 @@ function getAspectRatioLabel(width, height) {
     return width / AspectRatioValue + ":" + height / AspectRatioValue;
 }
 
-function getResourceList(path){
+function getResourceList(path, user) {
     //'images/gastronomia.json'
     fetch(path)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (myJson) {
-        addItems(myJson.resources);
-    });
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (myJson) {
+            addItems(myJson.resources, user);
+        });
+}
+function getQueryStringValueByName(name) {
+    var queryStringFromStartOfValue = location.search.split(name + '=')[1];
+    return queryStringFromStartOfValue !== undefined ? queryStringFromStartOfValue.split('&')[0] : null;
+}
+function initializeOJibwaGrid() {
+    console.log(getQueryStringValueByName('mostrar'));
+    if(getQueryStringValueByName('mostrar')){
+        var filterBy = getQueryStringValueByName('mostrar');
+        const galleryName = document.querySelector('#gallery-description');
+        galleryName.innerHTML = filterBy;
+        return getResourceList(`api/${filterBy}.json`, 'dciyig0yl')
+    }
+
+    return getResourceList('api/gastronomia.json', 'renzit');
 }
 
-getResourceList('api/gastronomia.json');
+initializeOJibwaGrid();
 
-function showGalleryTitle(item){
+function showGalleryTitle(item) {
     titleText = item.querySelector("span").firstChild.nodeValue;
     const galleryName = document.querySelector('#gallery-description');
     galleryName.innerHTML = titleText;
@@ -67,7 +82,8 @@ filterCategory.forEach(function (item) {
     item.addEventListener("click", function (event) {
         showGalleryTitle(item);
         const path = item.dataset.collection;
-        getResourceList(path);
+        const user = item.dataset.user;
+        getResourceList(path, user);
 
     });
 });

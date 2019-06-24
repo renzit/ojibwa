@@ -11707,7 +11707,6 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 
 
 #gotoTop {
-	display: none;
 	z-index: 299;
 	position: fixed;
 	width: 40px;
