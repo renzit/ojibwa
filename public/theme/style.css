@@ -8530,10 +8530,10 @@ body:not(.device-touch) .on-hover.i-overlay {
 
 .social-icon {
 	margin: 0 5px 5px 0;
-	width: 40px;
-	height: 40px;
-	font-size: 20px;
-	line-height: 38px !important;
+	width: 50px;
+	height: 50px;
+	font-size: 25px;
+	line-height: 48px !important;
 	color: #555;
 	text-shadow: none;
 	border: 1px solid #AAA;
@@ -8611,7 +8611,7 @@ body:not(.device-touch) .social-icon i {
 
 .social-icon i:last-child { color: #FFF !important; }
 
-.social-icon:hover i:first-child { margin-top: -38px; }
+.social-icon:hover i:first-child { margin-top: -48px; }
 
 .social-icon.si-large:hover i:first-child { margin-top: -54px; }
 
@@ -8797,8 +8797,8 @@ body:not(.device-touch) .social-icon i {
 .si-colored.si-xing { background-color: #126567 !important; }
 .si-instagram:hover,
 .si-colored.si-instagram { background-color: #3F729B !important; }
-.si-quora:hover,
-.si-colored.si-quora { background-color: #A82400 !important; }
+.si-whatsapp:hover,
+.si-colored.si-whatsapp { background-color: #25d366 !important; }
 .si-openid:hover,
 .si-colored.si-openid { background-color: #E16309 !important; }
 .si-steam:hover,

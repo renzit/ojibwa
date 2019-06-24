@@ -56,11 +56,19 @@ function getResourceList(path){
 
 getResourceList('api/gastronomia.json');
 
+function showGalleryTitle(item){
+    console.log(item);
+    const galleryName = document.querySelector('#gallery-watch');
+    galleryName.innerHTML = item;
+}
+
 const filterCategory = document.querySelectorAll("#filter-category .dropdown-item");
 filterCategory.forEach(function (item) {
     item.addEventListener("click", function (event) {
+        showGalleryTitle(item.querySelector("span").firstChild.nodeValue);
         const path = item.dataset.collection;
         getResourceList(path);
 
     });
 });
+
