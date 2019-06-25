@@ -58,7 +58,6 @@ function getQueryStringValueByName(name) {
     return queryStringFromStartOfValue !== undefined ? queryStringFromStartOfValue.split('&')[0] : null;
 }
 function initializeOJibwaGrid() {
-    console.log(getQueryStringValueByName('mostrar'));
     if(getQueryStringValueByName('mostrar')){
         var filterBy = getQueryStringValueByName('mostrar');
         const galleryName = document.querySelector('#gallery-description');
