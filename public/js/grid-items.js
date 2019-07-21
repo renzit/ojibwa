@@ -2,7 +2,7 @@ function addItems(itemList, user) {
     const templatePicture = document.querySelector('#item-template-picture');
     const grid = document.querySelector('.grid-container');
     grid.innerHTML = "";
-    itemList.forEach(item => {
+    itemList.forEach(function(item) {
         aspectRatioLabel = getAspectRatioLabel(item.width, item.height);
         imgPlaceholder = `data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${item.width} ${item.height}"%3e%3crect fill="%23F8F8F8" width="100%25" height="100%25"/%3e%3c/svg%3e`;
         const node = document.importNode(templatePicture.content, true);
