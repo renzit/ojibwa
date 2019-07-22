@@ -9,7 +9,7 @@ function addItems(itemList, user) {
         const templateNode = document.importNode(templatePicture.content, true);
         const image = templateNode.querySelector('img');
         if(counter >= 24){
-            image.parentElement.parentElement.setAttribute('hidden','');
+            image.parentElement.parentElement.classList.add('d-none');
         }
         image.src = imgPlaceholder;
         image.setAttribute('data-src', `https://res.cloudinary.com/${user}/image/upload/w_400,q_auto,ar_${aspectRatioLabel},c_fill,g_auto,e_sharpen/${item.public_id}.jpg`);
@@ -85,10 +85,15 @@ const filterCategory = document.querySelectorAll("#filter-category .dropdown-ite
 filterCategory.forEach(function (item) {
     item.addEventListener("click", function (event) {
         showGalleryTitle(item);
-        const path = item.dataset.collection;
-        const user = item.dataset.user;
+        let path = item.dataset.collection;
+        let user = item.dataset.user;
         getResourceList(path, user);
-
+        showLoadMoreButton();
     });
 });
+
+function showLoadMoreButton(){
+    let loadMoreButton = document.querySelector('#gallery-load-more');
+    loadMoreButton.removeAttribute('hidden');
+}
 
