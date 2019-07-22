@@ -7119,7 +7119,7 @@ body:not(.device-touch) .on-hover.i-overlay {
 	line-height: 48px !important;
 	color: #555;
 	text-shadow: none;
-	border: 1px solid #AAA;
+/*	border: 1px solid #AAA; */
 	border-radius: 3px;
 	overflow: hidden;
 }
