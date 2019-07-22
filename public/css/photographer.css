@@ -516,3 +516,23 @@ body.dark,
 }
 
 .dark .dark-mode span { color: #FFF; }
+
+input, textarea{
+	width: 100%;
+  overflow: visible;
+  height: 48px;
+  padding: 8px 4px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background-color: transparent!important;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  border-bottom-width: 1px;
+	font-family: source sans pro,sans-serif;
+	color:white;
+}
+
+textarea{
+	height: 96px;
+}

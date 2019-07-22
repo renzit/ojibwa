@@ -57,7 +57,7 @@
 
 	<!-- Document Title
 	============================================= -->
-	<title>Maximiliano Echenique | Fotografía Y Video</title>
+	<title>Ojibwa | Fotografía Y Video</title>
 
 	<!-- Teamplte image -->
 	<template id="item-template-picture">
@@ -366,8 +366,8 @@
 								<small class="text-muted uppercase t300 ls3 d-block">Hablemos!</small>
 								<h2 class="t700 ls0 mb-3" style="font-size: 64px; line-height: 1.2">Aquí me podes contactar.</h2>
 								<p class="text-muted" style="font-size: 16px;">Si estás interesado en colaborar, trabajar juntos, o si
-									solo quieres decir "¡Hola!", enviame un mensaje directo a mi mail, whatsapp o instagram</p>
-								<div class="d-flex align-items-center mt-4">
+									solo quieres decir "¡Hola!", enviame un mensaje directo a mi email, whatsapp o instagram</p>
+								<!-- <div class="d-flex align-items-center mt-4">
 									<a href="mailto:maximilianoetchenique@gmail.com"
 										class="button button-change button-large button-rounded nott t300 m-0 ohidden">
 										<span><i class="icon-line2-envelope"></i> Contacto</span>
@@ -383,7 +383,26 @@
 										<i class="icon-instagram"></i>
 										<i class="icon-instagram"></i>
 									</a>
-								</div>
+								</div> -->
+							</div>
+							<div class="col-md-6 dark">
+								<form name="contact" method="POST" data-netlify="true">
+									<p>
+										<input type="text" name="name" placeholder="Nombre" />
+									</p>
+									<p>
+										<input type="email" name="email" placeholder="Email" />
+									</p>
+									<p>
+										<input type="tel" name="phone" placeholder="Teléfono" />
+									</p>
+									<p>
+										<textarea name="message" placeholder="Mensaje"></textarea>
+									</p>
+									<p>
+										<button class="btn btn-outline-light btn-lg float-right" type="submit">Enviar</button>
+									</p>
+								</form>
 							</div>
 						</div>
 					</div>
