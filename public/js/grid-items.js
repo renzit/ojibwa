@@ -2,18 +2,22 @@ function addItems(itemList, user) {
     const templatePicture = document.querySelector('#item-template-picture');
     const grid = document.querySelector('.grid-container');
     grid.innerHTML = "";
+    let counter = 0;
     itemList.forEach(function(item) {
         aspectRatioLabel = getAspectRatioLabel(item.width, item.height);
         imgPlaceholder = `data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${item.width} ${item.height}"%3e%3crect fill="%23F8F8F8" width="100%25" height="100%25"/%3e%3c/svg%3e`;
-        const node = document.importNode(templatePicture.content, true);
-        const image = node.querySelector('img');
+        const templateNode = document.importNode(templatePicture.content, true);
+        const image = templateNode.querySelector('img');
+        if(counter >= 24){
+            image.parentElement.parentElement.setAttribute('hidden','');
+        }
         image.src = imgPlaceholder;
         image.setAttribute('data-src', `https://res.cloudinary.com/${user}/image/upload/w_400,q_auto,ar_${aspectRatioLabel},c_fill,g_auto,e_sharpen/${item.public_id}.jpg`);
         image.setAttribute('data-srcset',
             `https://res.cloudinary.com/${user}/image/upload/w_400,q_auto,ar_${aspectRatioLabel},c_fill,g_auto,e_sharpen/${item.public_id}.jpg 400w,
         https://res.cloudinary.com/${user}/image/upload/w_800,q_auto,ar_${aspectRatioLabel},c_fill,g_auto,e_sharpen/${item.public_id}.jpg 800w`);
 
-        grid.appendChild(node);
+        grid.appendChild(templateNode);
         imagesLoaded(grid, function () {
             var iso = new Isotope(grid, {
                 // options
@@ -21,6 +25,7 @@ function addItems(itemList, user) {
                 layoutMode: 'masonry'
             });
         });
+        counter ++;
     });
 
 
