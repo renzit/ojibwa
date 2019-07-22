@@ -8,7 +8,7 @@ function addItems(itemList, user) {
         imgPlaceholder = `data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${item.width} ${item.height}"%3e%3crect fill="%23F8F8F8" width="100%25" height="100%25"/%3e%3c/svg%3e`;
         const templateNode = document.importNode(templatePicture.content, true);
         const image = templateNode.querySelector('img');
-        if(counter >= 24){
+        if(counter >= 12){
             image.parentElement.parentElement.classList.add('d-none');
         }
         image.src = imgPlaceholder;
