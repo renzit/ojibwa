@@ -14,8 +14,6 @@ function showHiddenItems(imageToShow, hiddenItems) {
     hiddenItems[i].classList.remove('d-none');
   }
   const grid = document.querySelector('.grid-container');
-  console.log(iso);
-  console.log('existe iso?');
   var iso = new Isotope(grid, {
     // options
     itemSelector: '.img-hover-wrap',

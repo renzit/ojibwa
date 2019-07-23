@@ -2275,7 +2275,7 @@ var SEMICOLON = SEMICOLON || {};
 				if( $gridContainer.length > 0 ) {
 					if( !$gridContainer.hasClass('.customjs') ) {
 						if( $().isotope ) {
-							$gridContainer.isotope('layout');
+							// $gridContainer.isotope('layout');
 						} else {
 							console.log('documentOnResize > init: Isotope not defined.');
 						}
