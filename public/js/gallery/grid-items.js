@@ -21,6 +21,7 @@ function addItems(itemList, user) {
         counter ++;
     });
     imagesLoaded(grid, function () {
+        console.log('deguging phone bug');
         var iso = new Isotope(grid, {
             // options
             itemSelector: '.img-hover-wrap',
