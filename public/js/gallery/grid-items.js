@@ -18,15 +18,14 @@ function addItems(itemList, user) {
         https://res.cloudinary.com/${user}/image/upload/w_800,q_auto,ar_${aspectRatioLabel},c_fill,g_auto,e_sharpen/${item.public_id}.jpg 800w`);
 
         grid.appendChild(templateNode);
-        imagesLoaded(grid, function () {
-            console.log('1');
-            var iso = new Isotope(grid, {
-                // options
-                itemSelector: '.img-hover-wrap',
-                layoutMode: 'masonry'
-            });
-        });
         counter ++;
+    });
+    imagesLoaded(grid, function () {
+        var iso = new Isotope(grid, {
+            // options
+            itemSelector: '.img-hover-wrap',
+            layoutMode: 'masonry'
+        });
     });
 
 
