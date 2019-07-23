@@ -1,3 +1,4 @@
+var isotopeEnable = false;
 function addItems(itemList, user) {
     const templatePicture = document.querySelector('#item-template-picture');
     const grid = document.querySelector('.grid-container');
@@ -21,12 +22,17 @@ function addItems(itemList, user) {
         counter ++;
     });
     imagesLoaded(grid, function () {
-        console.log('deguging phone bug');
-        var iso = new Isotope(grid, {
-            // options
-            itemSelector: '.img-hover-wrap',
-            layoutMode: 'masonry'
-        });
+        if(!iso){
+            var iso = new Isotope(grid, {
+                // options
+                itemSelector: '.img-hover-wrap',
+                layoutMode: 'masonry'
+            });
+            isotopeEnable = true;
+        }else{
+            iso.arrange();
+        }
+
     });
 
 
