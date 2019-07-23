@@ -19,6 +19,7 @@ function addItems(itemList, user) {
 
         grid.appendChild(templateNode);
         imagesLoaded(grid, function () {
+            console.log('1');
             var iso = new Isotope(grid, {
                 // options
                 itemSelector: '.img-hover-wrap',

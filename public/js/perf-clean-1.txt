@@ -1,9 +1,0 @@
-total 1608
-drwxr-xr-x   8 crovat  staff   256B 30 jun 20:49 .
-drwxr-xr-x  12 crovat  staff   384B 28 jun 22:18 ..
--rwxr-xr-x   1 crovat  staff   131K 24 jun 18:28 functions.js
--rw-r--r--   1 crovat  staff   3,3K 24 jun 18:48 grid-items.js
--rw-r--r--   1 crovat  staff   1,9K 24 jun 18:28 hover3d.js
--rwxr-xr-x   1 crovat  staff    85K 24 jun 18:28 jquery.js
--rw-r--r--   1 crovat  staff     0B 30 jun 20:49 perf-clean-1.txt
--rwxr-xr-x   1 crovat  staff   572K 30 jun 20:48 plugins.js
