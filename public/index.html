@@ -33,33 +33,11 @@
 	<link rel="stylesheet" href="css/photographer.css" type="text/css" />
 	<!-- Photographer Specific Fonts -->
 	<link rel="stylesheet" href="css/fonts.css" type="text/css" />
-	<!-- / -->
-	<!-- <script>
-		!function (n, e) { var t, o, i, c = [], f = { passive: !0, capture: !0 }, r = new Date, a = "pointerup", u = "pointercancel"; function p(n, c) { t || (t = c, o = n, i = new Date, w(e), s()) } function s() { o >= 0 && o < i - r && (c.forEach(function (n) { n(o, t) }), c = []) } function l(t) { if (t.cancelable) { var o = (t.timeStamp > 1e12 ? new Date : performance.now()) - t.timeStamp; "pointerdown" == t.type ? function (t, o) { function i() { p(t, o), r() } function c() { r() } function r() { e(a, i, f), e(u, c, f) } n(a, i, f), n(u, c, f) }(o, t) : p(o, t) } } function w(n) { ["click", "mousedown", "keydown", "touchstart", "pointerdown"].forEach(function (e) { n(e, l, f) }) } w(n), self.perfMetrics = self.perfMetrics || {}, self.perfMetrics.onFirstInputDelay = function (n) { c.push(n), s() } }(addEventListener, removeEventListener);
-	</script> -->
-	<!-- <script>
-		var firebaseConfig = {
-			apiKey: "AIzaSyAeG_WOVgLGXAjtCVfj_efRXV1Pd3oYZo0",
-			authDomain: "ojibwaph.firebaseapp.com",
-			databaseURL: "https://ojibwaph.firebaseio.com",
-			projectId: "ojibwaph",
-			storageBucket: "",
-			messagingSenderId: "808690874364",
-			appId: "1:808690874364:web:79fa0c726bec2ae6"
-		};
-		(function (sa, fbc) {
-			function load(f, c) {
-				var a = document.createElement('script');
-				a.async = 1; a.src = f; var s = document.getElementsByTagName('script')[0];
-				s.parentNode.insertBefore(a, s);
-			} load(sa); window.onload = function () { firebase.initializeApp(fbc).performance(); };
-		})('https://www.gstatic.com/firebasejs/6.2.4/firebase-performance-standalone.js', firebaseConfig);
-	</script> -->
 
 	<!-- Document Title
 	============================================= -->
 	
-	<script type="application/ld+json">{"url":"https://ojibwa.uy","name":"Ojibwa","description":"Servicios de fotografía Y video","@context":"http://schema.org","@type":"WebSite"}</script>
+	<script type="application/ld+json">{"url":"https://ojibwa.uy","name":"Ojibwa Fotografía","description":"Servicios de fotografía y video","@context":"http://schema.org","@type":"WebSite"}</script>
 	<script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -70,12 +48,43 @@
       "name": "Maximiliano Echenique",
       "gender": "male",
       "nationality": "Uruguayo",
-      "telephone": "(+598) 93-922-585",
+      "telephone": "(+598) 94-767-118",
       "url": "http://ojibwa.uy",
 	    "sameAs" : [ "https://www.instagram.com/ojibwa_ph/",
       "https://www.linkedin.com/in/maximiliano-echenique-98205b9a/"]
     }
-    </script>
+		</script>
+		<script type='application/ld+json'>
+			{
+				"@context": "http://www.schema.org",
+				"@type": "ProfessionalService",
+				"name": "Ojibwa Fotografía",
+				"url": "https://ojibwa.uy/",
+				"sameAs": [
+					 "https://www.instagram.com/ojibwa_ph/",
+					 "https://g.page/ojibwa_ph"
+				],
+				"logo": "https://ojibwa.uy/images/ojibwa-maximiliano-echenique.jpg",
+				"priceRange": "$$",
+				"image": "https://ojibwa.uy/images/ojibwa-maximiliano-echenique.jpg",
+				"description": "Fotógrafo profesional en Montevideo, Fotografía profesional para tus redes sociales, Fotografía para medios.",
+				"address": {
+					 "@type": "PostalAddress",
+					 "addressLocality": "Montevideo",
+					 "addressRegion": "Montevideo",
+					 "postalCode": "11600",
+					 "addressCountry": "Uruguay"
+				},
+				"geo": {
+					 "@type": "GeoCoordinates",
+					 "latitude": "-34.891389",
+					 "longitude": "-56.156958"
+				},
+				"hasMap": "https://www.google.com.uy/maps/place/Ojibwa+Fotograf%C3%ADa/@-34.8914415,-56.1591684,781m/data=!3m2!1e3!4b1!4m5!3m4!1s0x959f81db1d7c5d75:0x77bf06084c98f0c0!8m2!3d-34.8914415!4d-56.1569797?hl=es-419",
+				 "openingHours": "Mo 01:00-01:00 Tu 01:00-01:00 We 01:00-01:00 Th 01:00-01:00 Fr 01:00-01:00 Sa 01:00-01:00 Su 01:00-01:00",
+				"telephone": "(+598) 94-767-118"
+			}
+			</script>
 	<!-- Teamplte image -->
 	<template id="item-template-picture">
 		<div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap" data-animate="fadeInUp">
@@ -131,7 +140,7 @@
 							<li>
 								<a href="https://www.instagram.com/ojibwa_ph/" target="_blank" class="inline-block p-3 ml-2 mt-4"><i
 										class="icon-instagram text-white"></i></a>
-								<a href="https://api.whatsapp.com/send?phone=59893922585" class="inline-block p-3 ml-2 mt-4"
+								<a href="https://api.whatsapp.com/send?phone=59894767118" class="inline-block p-3 ml-2 mt-4"
 									target="_blank"><i class="icon-whatsapp text-white"></i></a>
 							</li>
 						</ul>
@@ -160,7 +169,7 @@
 								Fotografía de LifeStyle, Eventos, Productos y Servicios que quieren diferenciarse de la multitud.
 							</h5>
 							<div class="d-flex align-items-center mt-5">
-								<a href="https://api.whatsapp.com/send?phone=59893922585"
+								<a href="https://api.whatsapp.com/send?phone=59894767118"
 									class="button button-change nott button-large dark t300 gradient-border" target="_blank">
 									<span><i class="icon-whatsapp"></i> Hablemos</span>
 									<span>093 922 585</span>
@@ -388,7 +397,7 @@
 										<i class="icon-line2-envelope"></i>
 										<i class="icon-line2-envelope"></i>
 									</a>
-									<a href="https://api.whatsapp.com/send?phone=59893922585" target="_blank"
+									<a href="https://api.whatsapp.com/send?phone=59894767118" target="_blank"
 										class="my-0 ml-2 social-icon inline-block">
 										<i class="icon-whatsapp"></i>
 										<i class="icon-whatsapp"></i>
@@ -438,7 +447,7 @@
 				<div class="container clearfix">
 
 					<div class="col_full center nobottommargin topmargin-sm">
-						&copy; OJIBWA 2019.<br><br>
+						&copy; OJIBWA 2020.<br><br>
 						<!-- <a href="https://api.whatsapp.com/send?phone=59893922585" target="_blank"
 							class="social-icon inline-block si-borderless si-rounded si-whatsapp">
 							<i class="icon-whatsapp"></i>
@@ -493,18 +502,6 @@
 		});
 
 	</script>
-	<!-- <script>
-		perfMetrics.onFirstInputDelay(function (delay, evt) {
-			ga('send', 'event', {
-				eventCategory: 'Perf Metrics',
-				eventAction: 'first-input-delay',
-				eventLabel: evt.type,
-				// Event values must be an integer.
-				eventValue: Math.round(delay),
-				// Exclude this event from bounce rate calculations.
-				nonInteraction: true,
-			});
-		});</script> -->
 
 </body>
 
