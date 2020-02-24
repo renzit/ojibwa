@@ -90,10 +90,10 @@ function initializeOJibwaGrid() {
     var filterBy = getQueryStringValueByName("mostrar");
     const galleryName = document.querySelector("#gallery-description");
     galleryName.innerHTML = filterBy;
-    return getResourceList(`api/${filterBy}.json`, "dciyig0yl");
+    return getResourceList(`https://res.cloudinary.com/dciyig0yl/image/list/${filterBy}.json`, "dciyig0yl");
   }
 
-  return getResourceList("api/gastronomia.json", "dciyig0yl");
+  return getResourceList(`https://res.cloudinary.com/dciyig0yl/image/list/gastronomia.json`, "dciyig0yl");
 }
 
 initializeOJibwaGrid();
