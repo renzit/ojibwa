@@ -4,9 +4,9 @@ function addItems(itemList, user) {
   const grid = document.querySelector(".grid-container");
   grid.innerHTML = "";
   let counter = 0;
-  let itemListShuffled = shuffleArray(itemList);
+  //let itemListShuffled = shuffleArray(itemList);
 
-  itemListShuffled.forEach(function(item) {
+  itemList.forEach(function(item) {
     aspectRatioLabel = getAspectRatioLabel(item.width, item.height);
     imgPlaceholder = `data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${
       item.width
@@ -126,12 +126,12 @@ function showLoadMoreButton() {
  * Randomize array element order in-place.
  * Using Durstenfeld shuffle algorithm.
  */
-function shuffleArray(array) {
-  for (var i = array.length - 1; i > 0; i--) {
-    var j = Math.floor(Math.random() * (i + 1));
-    var temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
-  }
-  return array;
-}
+// function shuffleArray(array) {
+//   for (var i = array.length - 1; i > 0; i--) {
+//     var j = Math.floor(Math.random() * (i + 1));
+//     var temp = array[i];
+//     array[i] = array[j];
+//     array[j] = temp;
+//   }
+//   return array;
+// }
