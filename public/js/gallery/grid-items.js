@@ -86,14 +86,16 @@ function getQueryStringValueByName(name) {
     : null;
 }
 function initializeOJibwaGrid() {
+  var path = buildCollectionPath('gastronomia' , "dciyig0yl")
   if (getQueryStringValueByName("mostrar")) {
     var filterBy = getQueryStringValueByName("mostrar");
-    const galleryName = document.querySelector("#gallery-description");
+    var galleryName = document.querySelector("#gallery-description");
     galleryName.innerHTML = filterBy;
-    return getResourceList(`https://res.cloudinary.com/dciyig0yl/image/list/${filterBy}.json`, "dciyig0yl");
+    path = buildCollectionPath(filterBy , "dciyig0yl")
+    return getResourceList(path, "dciyig0yl");
   }
 
-  return getResourceList(`https://res.cloudinary.com/dciyig0yl/image/list/gastronomia.json`, "dciyig0yl");
+  return getResourceList(path, "dciyig0yl");
 }
 
 initializeOJibwaGrid();
@@ -110,8 +112,9 @@ const filterCategory = document.querySelectorAll(
 filterCategory.forEach(function(item) {
   item.addEventListener("click", function(event) {
     showGalleryTitle(item);
-    let path = item.dataset.collection;
-    let user = item.dataset.user;
+    var filterBy = item.dataset.collection;
+    var user = item.dataset.user;
+    var path = buildCollectionPath(filterBy, user);
     getResourceList(path, user);
     showLoadMoreButton();
   });
@@ -120,6 +123,10 @@ filterCategory.forEach(function(item) {
 function showLoadMoreButton() {
   let loadMoreButton = document.querySelector("#gallery-load-more");
   loadMoreButton.removeAttribute("hidden");
+}
+
+function buildCollectionPath(filterBy, user){
+return `https://res.cloudinary.com/${user}/image/list/${filterBy}.json`;
 }
 
 /**
